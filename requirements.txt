@@ -1,0 +1,3 @@
+re
+streamlit
+langchain-community
