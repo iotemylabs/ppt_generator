@@ -1,5 +1,5 @@
 import re
-from langchain.llms import Ollama
+from langchain_community.llms import Ollama
 
 
 def extract_items(input_string):
@@ -22,7 +22,7 @@ def extract_items(input_string):
 
 def slide_data_gen(topic):
     llm = Ollama(model="dolphin2.1-mistral",
-                 temperature="0.4")
+                 temperature="0.4", base_url="http://localhost:11434")
 
     slide_data = []
 
